@@ -1,0 +1,7 @@
+package com.fer.pasajero;
+
+import com.fer.smsc.broadcast.SmsReceiver;
+
+public class SmsReceiver extends com.fer.smsc.broadcast.SmsReceiver {
+
+}

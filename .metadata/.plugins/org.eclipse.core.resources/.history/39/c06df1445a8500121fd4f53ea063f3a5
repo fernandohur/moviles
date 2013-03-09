@@ -1,0 +1,33 @@
+package com.fer.smsc.model.protocol.impl;
+
+import java.util.List;
+
+import com.fer.smsc.model.protocol.Confirmacion;
+import com.fer.smsc.model.protocol.SMSCSender;
+
+public class SMSCSEnderImpl implements SMSCSender{
+
+	private List<String> registeredTaxis;
+	
+	@Override
+	public Confirmacion enviarConfirmacionTaxi(String message) {
+		if (message.matches("Confirmar Taxi:[0-9]+ [0-9]+"))
+		{
+			String[] parts = message.split(":");
+			String[] params = parts[1].split(" ");
+			String idSender = params[0];
+			String timeAprox = params[1];
+			return new Confirmacion(Integer.parseInt(timeAprox), idSender);
+		}
+		else
+		{
+			throw new IllegalArgumentException();
+		}
+	}
+	
+	@Override
+	public String enviarSolicitudTaxi(String message, String idPasajero) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+}

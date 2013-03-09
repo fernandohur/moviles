@@ -1,0 +1,20 @@
+package com.fer.smsc.model.protocol;
+
+public class Confirmacion {
+
+	int tiempoAprox;
+	String idPasajero;
+	public Confirmacion(int tiempoAprox, String idPasajero) {
+		super();
+		this.tiempoAprox = tiempoAprox;
+		this.idPasajero = idPasajero;
+	}
+	public int gettiempoAprox() {
+		return tiempoAprox;
+	}
+	public String getIdPasajero() {
+		return idPasajero;
+	}
+	
+	
+}

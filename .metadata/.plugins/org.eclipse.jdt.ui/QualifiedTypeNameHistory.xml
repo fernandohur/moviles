@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="android.telephony.SmsMessage"/>
+<fullyQualifiedTypeName name="java.sql.Date"/>
+<fullyQualifiedTypeName name="com.fer.smsc.model.SolicitarServicio"/>
+<fullyQualifiedTypeName name="java.util.Date"/>
+<fullyQualifiedTypeName name="java.util.HashMap"/>
+<fullyQualifiedTypeName name="android.app.Activity"/>
+<fullyQualifiedTypeName name="com.fer.smsc.model.SmsSender"/>
+<fullyQualifiedTypeName name="junit.framework.TestCase"/>
+<fullyQualifiedTypeName name="com.fer.smsc.model.MessageParser"/>
+<fullyQualifiedTypeName name="com.fer.smsc.model.SolicitudServicio"/>
+<fullyQualifiedTypeName name="com.fer.smsc.model.protocol.PasajeroSender"/>
+<fullyQualifiedTypeName name="com.fer.smsc.model.protocol.SMSCSender"/>
+<fullyQualifiedTypeName name="com.fer.smsc.model.protocol.Confirmacion"/>
+<fullyQualifiedTypeName name="com.fer.messageProtocol.Protocol"/>
+<fullyQualifiedTypeName name="java.lang.IllegalArgumentException"/>
+<fullyQualifiedTypeName name="com.fer.messageProtocol.messages.SolicitarServicio"/>
+<fullyQualifiedTypeName name="com.fer.messageProtocol.SMSC"/>
+<fullyQualifiedTypeName name="com.fer.messageProtocol.sender.MessageSender"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="com.fer.messageProtocol.messages.Confirmacion"/>
+<fullyQualifiedTypeName name="com.fer.messageProtocol.ProtocolManager"/>
+<fullyQualifiedTypeName name="com.fer.messageProtocol.sender.MessageReceiver"/>
+<fullyQualifiedTypeName name="com.fer.smsc.messageProtocol.sender.TaxiSender"/>
+<fullyQualifiedTypeName name="com.fer.smsc.messageProtocol.sender.AbstractSender"/>
+<fullyQualifiedTypeName name="com.fer.smsc.messageProtocol.sender.PasajeroSender"/>
+<fullyQualifiedTypeName name="android.app.Application"/>
+<fullyQualifiedTypeName name="com.fer.pasajero.EsperarTaxiActivity"/>
+<fullyQualifiedTypeName name="com.fer.pasajero.R.id"/>
+<fullyQualifiedTypeName name="android.widget.TextView"/>
+<fullyQualifiedTypeName name="com.fer.pasajero.PasajeroApplication"/>
+<fullyQualifiedTypeName name="com.fer.smsc.messageProtocol.sender.MessageSender"/>
+<fullyQualifiedTypeName name="android.telephony.SmsManager"/>
+<fullyQualifiedTypeName name="com.fer.smsc.messageProtocol.sender.SmsSender"/>
+<fullyQualifiedTypeName name="android.util.Log"/>
+<fullyQualifiedTypeName name="android.widget.Toast"/>
+<fullyQualifiedTypeName name="android.content.Intent"/>
+<fullyQualifiedTypeName name="com.fer.pasajero.activities.ServicioConfirmadoActivity"/>
+<fullyQualifiedTypeName name="com.fer.pasajero.PasajeroManager"/>
+<fullyQualifiedTypeName name="android.content.Context"/>
+<fullyQualifiedTypeName name="android.content.IntentFilter"/>
+<fullyQualifiedTypeName name="com.fer.smsc.broadcast.SmsReceiver"/>
+<fullyQualifiedTypeName name="com.fer.smsc.messageProtocol.sender.MessageReceiver"/>
+<fullyQualifiedTypeName name="com.fer.pasajero.SmsBroadCastReceiver"/>
+</qualifiedTypeNameHistroy>

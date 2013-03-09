@@ -1,0 +1,7 @@
+package com.fer.smsc.model.protocol.impl;
+
+import com.fer.smsc.model.protocol.PasajeroSender;
+
+public class PasajeroSenderImpl implements PasajeroSender{
+
+}

@@ -1,0 +1,5 @@
+package com.ft.clientetaxi;
+
+public class SmsReceiver extends com.fer.smsc.broadcast.SmsReceiver{
+
+}

@@ -1,0 +1,7 @@
+package com.fer.smsc.model;
+
+public class SolicitarServicio {
+
+	private String numeroPasajero;
+	private String ubicacion;
+}

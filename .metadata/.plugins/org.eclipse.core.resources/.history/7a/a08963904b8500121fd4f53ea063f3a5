@@ -1,0 +1,6 @@
+package com.fer.smsc.model.protocol;
+
+public interface TaxiSender {
+
+	public void confirmarServicio();
+}

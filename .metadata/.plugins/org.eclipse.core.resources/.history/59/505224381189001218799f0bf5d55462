@@ -1,0 +1,7 @@
+package com.ft.clientetaxi.model;
+
+public class Solicitud {
+
+	private String numero;
+	private String ubicacion;
+}

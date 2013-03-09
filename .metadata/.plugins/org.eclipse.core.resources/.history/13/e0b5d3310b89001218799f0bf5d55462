@@ -1,0 +1,23 @@
+package com.ft.clientetaxi;
+
+import android.content.Context;
+
+import com.ft.common.AbstractMessenger;
+import com.ft.common.SmsSender;
+
+public class TaxiMessenger extends AbstractMessenger{
+
+	public TaxiMessenger() {
+		super(new SmsSender());
+		
+	}
+
+	@Override
+	public void onMessageReceived(String sender, String message, Context context) {
+		
+		if ()
+		
+	}
+
+	
+}

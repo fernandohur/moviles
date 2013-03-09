@@ -1,0 +1,10 @@
+package com.fer.tests.smsc;
+
+import junit.framework.TestCase;
+
+public class TestSMSC extends TestCase{
+
+	
+	public void testEnviar();
+	
+}

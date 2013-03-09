@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ClientePasajero</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_section3">Section 3</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section1">Section 1</string>
+    <string name="title_activity_title">CabScore</string>
+    <string name="title_activity_esperar_taxi">EsperarTaxiActivity</string>
+    <string name="txtFavorEspere">Su taxi ha sido pedido. Por favor espere 2 minutos mientras buscamos un servicio disponible para usted</string>
+
+</resources>

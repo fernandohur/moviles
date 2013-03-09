@@ -1,0 +1,28 @@
+package com.ft.clientetaxi.model;
+
+public class Solicitud {
+
+	private String numero;
+	private String ubicacion;
+	private boolean confirmado;
+	public Solicitud(String numero, String ubicacion, boolean confirmado) {
+		super();
+		this.numero = numero;
+		this.ubicacion = ubicacion;
+		this.confirmado = confirmado;
+	}
+	public String getNumero() {
+		return numero;
+	}
+	public String getUbicacion() {
+		return ubicacion;
+	}
+	public boolean isConfirmado() {
+		return confirmado;
+	}
+	public void setConfirmado(boolean b)
+	{
+		confirmado = b;
+	}
+	
+}

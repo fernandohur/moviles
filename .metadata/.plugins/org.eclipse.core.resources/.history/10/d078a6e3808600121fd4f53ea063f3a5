@@ -1,0 +1,23 @@
+package com.fer.pasajero;
+
+import android.content.Context;
+import android.content.Intent;
+import android.widget.Toast;
+
+import com.fer.pasajero.activities.ServicioConfirmadoActivity;
+import com.fer.smsc.broadcast.SmsReceiver;
+
+public class SmsBroadCastReceiver extends SmsReceiver {
+
+	@Override
+	public void onMessageReceived(String sender, String messageBody, Context context)
+	{
+		Toast.makeText(context, messageBody, Toast.LENGTH_LONG).show();
+		Intent intent = new Intent(context, ServicioConfirmadoActivity.class);
+		intent.putExtra("message", messageBody);
+		context.startActivity(intent);
+	}
+
+	
+
+}

@@ -1,0 +1,11 @@
+package com.fer.smsc.model.protocol.impl;
+
+import com.fer.smsc.model.protocol.PasajeroSender;
+
+public class PasajeroSenderImpl implements PasajeroSender{
+
+	@Override
+	public Str solicitarTaxi(String idPasajero, String ubicación) {
+		String mensaje = "Solicitar Taxi:"+ubicación;
+	}
+}

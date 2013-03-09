@@ -1,0 +1,32 @@
+package com.ft.clientetaxi;
+
+import android.content.Context;
+
+import com.fer.smsc.messageProtocol.sender.SmsSender;
+import com.fer.smsc.messageProtocol.sender.TaxiSender;
+
+public class TaxiLogic extends TaxiSender {
+
+	public TaxiLogic() {
+		super(new SmsSender());
+	}
+
+	@Override
+	public void onMessageReceived(String sender, String message, Context context) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void onServicioSolicitado(String ubicacion) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void onUnknownMessage(String sender, String message) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

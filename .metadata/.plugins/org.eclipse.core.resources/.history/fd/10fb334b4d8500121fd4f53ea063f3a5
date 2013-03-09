@@ -1,0 +1,7 @@
+package com.fer.smsc.model.protocol;
+
+public class Confirmacion {
+
+	String textoConfirmacion;
+	String idPasajero;
+}

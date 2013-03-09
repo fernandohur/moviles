@@ -1,0 +1,15 @@
+package com.fer.tests.smsc;
+
+import junit.framework.TestCase;
+
+public class TestSMSC extends TestCase{
+
+	
+	public void testSolicitarTaxi()
+	{
+		
+		String s1 = "Solicitar Taxi:calle 132 a # 19-43";
+		
+	}
+	
+}

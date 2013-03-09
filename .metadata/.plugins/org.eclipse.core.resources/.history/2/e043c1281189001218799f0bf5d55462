@@ -1,0 +1,9 @@
+package com.ft.clientetaxi;
+
+
+public class SmsReceiver extends com.ft.common.SmsReceiver{
+
+	public SmsReceiver() {
+		super(TaxiMessenger.getInstance());
+	}
+}

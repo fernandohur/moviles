@@ -1,0 +1,12 @@
+package com.ft.common;
+
+import com.fer.smsc.messageProtocol.sender.MessageReceiver;
+
+public abstract class AbstractSender implements MessageReceiver{
+
+	protected MessageSender sender;
+	
+	public AbstractSender(MessageSender sender) {
+		this.sender = sender;
+	}
+}

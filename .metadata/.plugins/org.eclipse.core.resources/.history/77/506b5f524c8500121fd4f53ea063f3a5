@@ -1,0 +1,7 @@
+package com.fer.smsc.model.protocol;
+
+public interface SMSCSender {
+
+	public String enviarSolicitudTaxi(String message, String idPasajero);
+	public void enviarConfirmacionTaxi(String message);
+}

@@ -1,0 +1,20 @@
+package com.fer.smsc.model.protocol;
+
+public class Confirmacion {
+
+	String textoConfirmacion;
+	String idPasajero;
+	public Confirmacion(String textoConfirmacion, String idPasajero) {
+		super();
+		this.textoConfirmacion = textoConfirmacion;
+		this.idPasajero = idPasajero;
+	}
+	public String getTextoConfirmacion() {
+		return textoConfirmacion;
+	}
+	public String getIdPasajero() {
+		return idPasajero;
+	}
+	
+	
+}

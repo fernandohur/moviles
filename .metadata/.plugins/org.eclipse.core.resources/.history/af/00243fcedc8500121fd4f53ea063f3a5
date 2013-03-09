@@ -1,0 +1,10 @@
+package com.fer.smsc.messageProtocol.sender;
+
+public abstract class AbstractSender{
+
+	protected MessageSender sender;
+	
+	public AbstractSender(MessageSender sender) {
+		this.sender = sender;
+	}
+}

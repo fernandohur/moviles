@@ -1,0 +1,7 @@
+package com.fer.smsc.model.protocol;
+
+public interface PasajeroSender {
+
+	public void solicitarTaxi(String idPasajero, String ubicación);
+	
+}

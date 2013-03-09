@@ -1,0 +1,14 @@
+package com.ft.clientetaxi;
+
+import com.ft.common.AbstractMessenger;
+import com.ft.common.MessageSender;
+import com.ft.common.SmsSender;
+import com.ft.common.protocol.ProtocolManager;
+
+public class TaxiMessenger extends AbstractMessenger{
+
+	public TaxiMessenger() {
+		super(new SmsSender());
+	}
+	
+	}

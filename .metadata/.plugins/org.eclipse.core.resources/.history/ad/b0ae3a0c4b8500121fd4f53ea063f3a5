@@ -1,0 +1,75 @@
+package com.fer.tests.smsc;
+
+import com.fer.smsc.model.MessageParser;
+import com.fer.smsc.model.SolicitudServicio;
+
+import junit.framework.TestCase;
+
+public class TestMessageParser extends TestCase{
+
+	
+	public void testGetSolicitudServicio()
+	{
+		String sender1 = "1";
+		String sender2 = "2";
+		String sender3 = "3";
+		String sender4 = "4";
+		String message1 = "Solicitar Taxi:calle 132 a # 19-431";
+		String message2 = "Solicitar Taxi:calle 132 a # 19-432";
+		String message3 = "Solicitar Taxi:calle 132 a # 19-433";
+		String message4 = "Solicitar Taxi:calle 132 a # 19-434";
+		
+		MessageParser parser = new MessageParser();
+		SolicitudServicio servicio = parser.getSolicitudServicio(message1, sender1);
+		assertEquals(servicio.getNumeroPasajero(), sender1);
+		assertEquals(servicio.getUbicacion(), "calle 132 a # 19-431");
+		assertEquals(servicio.isConfirmado(), false);
+		assertEquals(servicio.getTiempoAprox()>0, false);
+		
+		
+		servicio = parser.getSolicitudServicio(message2, sender2);
+		assertEquals(servicio.getNumeroPasajero(), sender2);
+		assertEquals(servicio.getUbicacion(), "calle 132 a # 19-432");
+		assertEquals(servicio.isConfirmado(), false);
+		assertEquals(servicio.getTiempoAprox()>0, false);
+		
+		servicio = parser.getSolicitudServicio(message3, sender3);
+		assertEquals(servicio.getNumeroPasajero(), sender3);
+		assertEquals(servicio.getUbicacion(), "calle 132 a # 19-433");
+		assertEquals(servicio.isConfirmado(), false);
+		assertEquals(servicio.getTiempoAprox()>0, false);
+		
+		servicio = parser.getSolicitudServicio(message4, sender4);
+		assertEquals(servicio.getNumeroPasajero(), sender4);
+		assertEquals(servicio.getUbicacion(), "calle 132 a # 19-434");
+		assertEquals(servicio.isConfirmado(), false);
+		assertEquals(servicio.getTiempoAprox()>0, false);
+	}
+	
+	public void testGetServicioConfirmado()
+	{
+		//Confirmar un servicio no existente
+		MessageParser parser = new MessageParser();
+		String id1 = "1";
+		String t1 = "1";
+		String confirmar1 = "Confirmar Taxi:"+id1+" "+t1;
+		assertEquals(parser.isConfirmarTaxi(confirmar1), true);
+		assertEquals(parser.getServicioConfirmado(confirmar1), null);
+		
+		//Confirmar un servicio existente
+		String id2 = "2";
+		String t2 = "2";
+		parser.getSolicitudServicio("Solicitar Servicio:ubicacion", id2);
+		String confirmar2 = "Confirmar Taxi:"+id2+" "+t2;
+		SolicitudServicio servicio = parser.getServicioConfirmado(confirmar2);
+		assertEquals(servicio!=null, true);
+		assertEquals(servicio.getNumeroPasajero(), id2);
+		assertEquals(servicio.getTiempoAprox()+"", t2);
+		assertEquals(servicio.getUbicacion(), "ubicacion");
+		assertEquals(servicio.isConfirmado(),true);
+		
+		//Un servicio ya confirmado no puede ser re-confirmado
+		parser.getServicioConfirmado(confirmar2);
+	}
+	
+}

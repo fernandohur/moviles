@@ -1,0 +1,13 @@
+package com.ft.clientetaxi;
+
+import android.content.Context;
+import android.content.Intent;
+
+import com.ft.common.MessageReceiver;
+
+public class SmsReceiver extends com.ft.common.SmsReceiver{
+
+	public SmsReceiver() {
+		super(new TaxiMessenger());
+	}
+}

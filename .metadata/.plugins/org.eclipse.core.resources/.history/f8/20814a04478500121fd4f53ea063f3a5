@@ -1,0 +1,39 @@
+package com.fer.tests.smsc;
+
+import com.fer.smsc.model.MessageParser;
+import com.fer.smsc.model.SolicitudServicio;
+
+import junit.framework.TestCase;
+
+public class TestSMSC extends TestCase{
+
+	
+	public void testSolicitarTaxi()
+	{
+		String sender1 = "1";
+		String sender2 = "2";
+		String sender3 = "3";
+		String sender4 = "4";
+		String message1 = "Solicitar Taxi:calle 132 a # 19-43";
+		String message2 = "Solicitar Taxi:calle 132 a # 19-43";
+		String message3 = "Solicitar Taxi:calle 132 a # 19-43";
+		String message4 = "Solicitar Taxi:calle 132 a # 19-43";
+		
+		MessageParser parser = new MessageParser();
+		SolicitudServicio servicio = parser.getSolicitudServicio(message1, sender1);
+		assertEquals(servicio.getNumeroPasajero(), sender1);
+		assertEquals(servicio.getUbicacion(), "calle 132 a # 19-43");
+		assertEquals(servicio.isConfirmado(), false);
+		assertEquals(servicio.getTiempoAprox()>0, false);
+		
+		
+		servicio = parser.getSolicitudServicio(message2, sender2);
+		assertEquals(servicio.getNumeroPasajero(), sender2);
+		
+		servicio = parser.getSolicitudServicio(message3, sender3);
+		
+		servicio = parser.getSolicitudServicio(message4, sender4);
+		
+	}
+	
+}

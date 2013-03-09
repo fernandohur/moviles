@@ -1,0 +1,6 @@
+package com.fer.smsc.messageProtocol;
+
+public class SMSC {
+
+	public final static String SMSC_NUMBER = "3008734028"; 
+}

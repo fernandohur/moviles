@@ -1,0 +1,18 @@
+package com.fer.smsc.model.protocol.impl;
+
+import com.fer.smsc.model.protocol.SMSCSender;
+
+public class SMSCSEnderImpl implements SMSCSender{
+
+	@Override
+	public String enviarConfirmacionTaxi(String message) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+	@Override
+	public String enviarSolicitudTaxi(String message, String idPasajero) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+}

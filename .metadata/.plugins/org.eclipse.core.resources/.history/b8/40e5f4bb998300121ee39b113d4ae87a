@@ -1,0 +1,48 @@
+package com.fer.smsc.model;
+
+import java.util.Date;
+
+public class SolicitudServicio {
+
+	private String numeroPasajero;
+	private String ubicacion;
+	private Date fechaSolicitada;
+	private boolean confirmado;
+	private int tiempoAprox;
+	
+	public SolicitudServicio(String numeroPasajero, String ubicacion,
+			Date fechaSolicitada) {
+		super();
+		this.numeroPasajero = numeroPasajero;
+		this.ubicacion = ubicacion;
+		this.fechaSolicitada = fechaSolicitada;
+		confirmado = false;
+	}
+	
+	public 
+
+	public void setConfirmado(boolean confirmado) {
+		this.confirmado = confirmado;
+	}
+
+	public String getNumeroPasajero() {
+		return numeroPasajero;
+	}
+
+	public String getUbicacion() {
+		return ubicacion;
+	}
+
+	public Date getFechaSolicitada() {
+		return fechaSolicitada;
+	}
+
+	public boolean isConfirmado() {
+		return confirmado;
+	}
+	
+	@Override
+	public String toString() {
+		return "<pasajero: "+numeroPasajero+", ubicacion: "+ubicacion+", fecha:"+fechaSolicitada+", confirmado:"+confirmado+">";
+	}
+}

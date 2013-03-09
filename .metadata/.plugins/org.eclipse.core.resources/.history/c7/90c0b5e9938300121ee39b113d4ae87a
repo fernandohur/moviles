@@ -1,0 +1,12 @@
+package com.fer.smsc.model;
+
+import java.util.Date;
+
+public class SolicitarServicio {
+
+	private String numeroPasajero;
+	private String ubicacion;
+	private Date fechaSolicitada;
+	
+	
+}

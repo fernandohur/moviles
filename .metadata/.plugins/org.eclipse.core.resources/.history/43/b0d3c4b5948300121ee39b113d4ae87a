@@ -1,0 +1,18 @@
+package com.fer.smsc.model;
+
+public class MessageParser {
+
+	public static final String SOLICITAR_SERVICIO = "Solicitar Taxi";
+	public static final String CONFIRMAR_TAXI = "Confirmar Taxi";
+	
+	
+	
+	public boolean isSolicitarServicio(String mensaje)
+	{
+		return mensaje.startsWith(SOLICITAR_SERVICIO);		
+	}
+	public boolean isConfirmarTaxi(String mensaje)
+	{
+		return mensaje.startsWith(CONFIRMAR_TAXI);
+	}
+}

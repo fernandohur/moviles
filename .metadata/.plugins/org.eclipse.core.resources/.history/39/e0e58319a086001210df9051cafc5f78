@@ -1,0 +1,32 @@
+package com.fer.pasajero;
+
+import android.app.Application;
+import android.content.BroadcastReceiver;
+import android.content.Context;
+import android.content.Intent;
+import android.content.IntentFilter;
+
+public class PasajeroApplication extends Application{
+
+	PasajeroManager pasajeroManager;
+	
+	public PasajeroApplication() {
+		pasajeroManager = new PasajeroManager();
+		IntentFilter filter = new IntentFilter();
+		SmsBroadCastReceiver receiver = new SmsBroadCastReceiver();
+		receiver.setMessageReceiver(pasajeroManager);
+		getApplicationContext().registerReceiver(new BroadcastReceiver() {
+			
+			@Override
+			public void onReceive(Context context, Intent intent) {
+				// TODO Auto-generated method stub
+				
+			}
+		}, filter);
+	}
+	
+	public PasajeroManager getPasajeroManager()
+	{
+		return pasajeroManager;
+	}
+}

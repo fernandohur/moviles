@@ -1,0 +1,8 @@
+package com.ft.common;
+
+public class Snippet {
+	public static void main(String[] args) {
+		i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+	}
+}
+

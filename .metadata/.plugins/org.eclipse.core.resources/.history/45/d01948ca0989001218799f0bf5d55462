@@ -1,0 +1,11 @@
+package com.ft.common;
+
+
+public abstract class AbstractMessager implements MessageReceiver{
+
+	protected MessageSender sender;
+	
+	public AbstractMessager(MessageSender sender) {
+		this.sender = sender;
+	}
+}

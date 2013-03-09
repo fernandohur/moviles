@@ -1,0 +1,36 @@
+package com.ft.clientetaxi;
+
+import com.ft.common.AbstractSender;
+import com.ft.common.MessageSender;
+import com.ft.common.protocol.ProtocolManager;
+
+public abstract class TaxiSender extends AbstractSender{
+
+	public TaxiSender(MessageSender sender) {
+		super(sender);
+	}
+	
+	public void confirmarServicio(String idPasajero, int tiempoAprox)
+	{
+		String message = ProtocolManager.getConfirmarServicio(idPasajero, tiempoAprox);
+		sender.sendMessage(idPasajero, message);
+	}
+	
+	
+	public void onMessageReceived(String sender, String message){
+		
+		if (ProtocolManager.isSolicitarServicio(message))
+		{
+			String ubicacion = ProtocolManager.getSolicitarServicio(message);
+			onServicioSolicitado(ubicacion);
+		}
+		else
+		{
+			onUnknownMessage(sender,message);
+		}
+		
+	};
+	
+	public abstract void onServicioSolicitado(String ubicacion);
+	public abstract void onUnknownMessage(String sender, String message);
+}

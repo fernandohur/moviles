@@ -1,0 +1,19 @@
+package com.fer.pasajero;
+
+import com.fer.smsc.messageProtocol.sender.PasajeroSender;
+
+public class PasajeroManager extends PasajeroSender {
+
+	@Override
+	public void onServicioConfirmado(String message) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void onUnknownMessage(String sender, String message) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,34 @@
+package com.fer.smsc.model;
+
+import java.util.Date;
+import java.util.HashMap;
+
+public class MessageParser {
+
+	public static final String SOLICITAR_SERVICIO = "Solicitar Taxi";
+	public static final String CONFIRMAR_TAXI = "Confirmar Taxi";
+	public static final String SPLITTER = ":";
+	
+	/**
+	 * Representa un mapa con las solicitudes de servicio de taxi.
+	 * El mapa es []
+	 */
+	private HashMap<String, SolicitudServicio> solicitudServicio;
+	
+	public boolean isSolicitarServicio(String mensaje)
+	{
+		return mensaje.startsWith(SOLICITAR_SERVICIO);		
+	}
+	
+	public boolean isConfirmarTaxi(String mensaje)
+	{
+		return mensaje.startsWith(CONFIRMAR_TAXI);
+	}
+	
+	public SolicitudServicio getSolicitudServicio(String message,String sender)
+	{
+		String ubicacion = message.split(SPLITTER)[1];
+		SolicitudServicio solicitud = new SolicitudServicio(sender, ubicacion, new Date());
+		return solicitud;
+	}
+}

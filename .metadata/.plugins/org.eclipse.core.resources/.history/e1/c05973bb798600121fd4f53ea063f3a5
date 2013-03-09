@@ -1,0 +1,18 @@
+package com.fer.pasajero;
+
+import android.content.Context;
+
+import com.fer.smsc.broadcast.SmsReceiver;
+
+public class SmsBroadCastReceiver extends SmsReceiver {
+
+	@Override
+	public void onMessageReceived(String sender, String messageBody,
+			Context context)
+	{
+		
+	}
+
+	
+
+}

@@ -1,0 +1,46 @@
+package com.fer.pasajero.activities;
+
+import android.content.BroadcastReceiver;
+import android.content.Context;
+import android.content.Intent;
+import android.content.IntentFilter;
+import android.os.Bundle;
+import android.support.v4.app.FragmentActivity;
+import android.view.View;
+import android.view.View.OnClickListener;
+
+import com.fer.pasajero.PasajeroApplication;
+import com.fer.pasajero.R;
+import com.fer.pasajero.SmsBroadCastReceiver;
+
+public class TitleActivity extends FragmentActivity implements OnClickListener {
+
+
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_title);
+		setTitle("CabScore");
+		findViewById(R.id.btnSolicitarTaxi).setOnClickListener(this);
+		
+		IntentFilter filter = new IntentFilter();
+		SmsBroadCastReceiver receiver = new SmsBroadCastReceiver();
+		registerReceiver(getApp()., filter);
+	}
+	
+	public PasajeroApplication getApp()
+	{
+		return (PasajeroApplication)getApplication();
+	}
+	
+	@Override
+	public void onClick(View v) {
+		
+		Intent intent = new Intent(this,SolicitarTaxiActivity.class);
+		startActivity(intent);
+	}
+
+	
+
+}

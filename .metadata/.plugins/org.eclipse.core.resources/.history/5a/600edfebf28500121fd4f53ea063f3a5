@@ -1,0 +1,8 @@
+package com.fer.pasajero;
+
+import android.app.Application;
+
+public class PasajeroApplication extends Application{
+
+	
+}
