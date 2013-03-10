@@ -35,7 +35,7 @@ public class SolicitarTaxiActivity extends Activity implements OnClickListener {
 		TextView txtCarrera = (TextView) findViewById(R.id.txtCarrera);
 		TextView txtApt = (TextView) findViewById(R.id.txtApt);
 		Ubicacion ubicacion = new Ubicacion(txtCalle.getText().toString(),
-				txtCarrera.getText().toString(), txtApt.getText().toString(), "");
+				txtCarrera.getText().toString(), txtApt.getText().toString(), "", "");
 		PasajeroManager pm = PasajeroManager.get();
 		pm.solicitarTaxi(ubicacion);
 	}

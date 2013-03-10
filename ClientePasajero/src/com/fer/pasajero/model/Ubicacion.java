@@ -6,14 +6,24 @@ public class Ubicacion {
 	private String carrera;
 	private String apartamento;
 	private String extraInfo;
+	private String nombre;
 	
 	public Ubicacion(String calle, String carrera, String apartamento,
-			String extraInfo) {
+			String extraInfo, String nombre) {
 		super();
+		this.nombre = nombre;
 		this.calle = calle;
 		this.carrera = carrera;
 		this.apartamento = apartamento;
 		this.extraInfo = extraInfo;
+	}
+
+	public String getNombre() {
+		return nombre;
+	}
+
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
 	}
 
 	public String getCalle() {
@@ -48,7 +58,11 @@ public class Ubicacion {
 		this.extraInfo = extraInfo;
 	}
 	
-	
+	@Override
+	public String toString() {
+		String ubicacion = "Calle "+calle + " # " +carrera + " Apt."+ apartamento;
+		return ubicacion;
+	}
 	
 	
 }

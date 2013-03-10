@@ -11,5 +11,7 @@
     <string name="title_activity_esperar_taxi">EsperarTaxiActivity</string>
     <string name="txtFavorEspere">Su taxi ha sido pedido. Por favor espere 2 minutos mientras buscamos un servicio disponible para usted</string>
     <string name="title_activity_servicio_confirmado">ServicioConfirmadoActivity</string>
+    <string name="title_activity_crear_ubicacion">CrearUbicacionActivity</string>
+    <string name="title_activity_ubicaciones">UbicacionesActivity</string>
 
 </resources>

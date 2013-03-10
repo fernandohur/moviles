@@ -17,8 +17,10 @@ public class TitleActivity extends FragmentActivity implements OnClickListener {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_title);
 		setTitle("CabScore");
-		findViewById(R.id.btnSolicitarTaxi).setOnClickListener(this);
 		
+		findViewById(R.id.btnSolicitarTaxi).setOnClickListener(this);
+		findViewById(R.id.btnCrearUbicacion).setOnClickListener(this);
+		findViewById(R.id.btnUbicaciones).setOnClickListener(this);
 		
 	}
 
@@ -26,8 +28,21 @@ public class TitleActivity extends FragmentActivity implements OnClickListener {
 	@Override
 	public void onClick(View v) {
 		
-		Intent intent = new Intent(this,SolicitarTaxiActivity.class);
-		startActivity(intent);
+		if (v.equals(findViewById(R.id.btnSolicitarTaxi)))
+		{
+			Intent intent = new Intent(this,SolicitarTaxiActivity.class);
+			startActivity(intent);
+		}
+		else if (v.equals(findViewById(R.id.btnCrearUbicacion)))
+		{
+			Intent intent = new Intent(this,CrearUbicacionActivity.class);
+			startActivity(intent);
+		}
+		else if (v.equals(findViewById(R.id.btnUbicaciones)))
+		{
+			Intent intent = new Intent(this, UbicacionesActivity.class);
+			startActivity(intent);
+		}
 	}
 
 	
