@@ -20,7 +20,7 @@ public class SMSCManager extends AbstractMessenger{
 	{
 		if (instance==null)
 		{
-			instance = new SMSCManager("");
+			instance = new SMSCManager();
 		}
 		return instance;
 	}
@@ -36,6 +36,7 @@ public class SMSCManager extends AbstractMessenger{
 		for (String taxiId : taxisList) {
 			
 			String message = ProtocolManager.getSolicitarServicioTaxista(pasajeroID, ubicacion);
+			Log.d(TAG, "Enviando confirmacion al taxi "+taxiId+" con "+message);
 			sender.sendMessage(taxiId, message);
 		}
 	}

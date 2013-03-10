@@ -94,7 +94,7 @@ public class ProtocolManager {
 	
 	public static boolean isSolicitarServicio(String message)
 	{
-		return message.matches(SOLICITAR_TAXI+SEPARADOR+"[.]");
+		return message.matches(SOLICITAR_TAXI+SEPARADOR+".+");
 	}
 	
 	public static boolean isSolicitarServicioTaxista(String message)
