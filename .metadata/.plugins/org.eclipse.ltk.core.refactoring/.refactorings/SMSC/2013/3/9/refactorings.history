@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename type &apos;com.fer.smsc.model.SolicitarServicio&apos; to &apos;SolicitudServicio&apos;&#x0D;&#x0A;- Original project: &apos;SMSC&apos;&#x0D;&#x0A;- Original element: &apos;com.fer.smsc.model.SolicitarServicio&apos;&#x0D;&#x0A;- Renamed element: &apos;com.fer.smsc.model.SolicitudServicio&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;SolicitarServicio&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;com.fer.smsc.model{SolicitarServicio.java[SolicitarServicio" matchStrategy="1" name="SolicitudServicio" qualified="false" references="true" similarDeclarations="false" stamp="1362268736403" textual="false" version="1.0"/>
-</session>

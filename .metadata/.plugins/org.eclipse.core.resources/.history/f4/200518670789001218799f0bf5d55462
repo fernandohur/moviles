@@ -1,9 +1,0 @@
-package com.fer.smsc.messageProtocol.sender;
-
-import android.content.Context;
-
-public interface MessageReceiver {
-
-	public void onMessageReceived(String sender, String message, Context context);
-	
-}

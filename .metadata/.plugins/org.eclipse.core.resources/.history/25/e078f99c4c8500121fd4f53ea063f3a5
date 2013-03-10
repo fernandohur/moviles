@@ -1,7 +1,0 @@
-package com.fer.smsc.model.protocol.impl;
-
-import com.fer.smsc.model.protocol.SMSCSender;
-
-public class SMSCSEnderImpl implements SMSCSender{
-
-}
