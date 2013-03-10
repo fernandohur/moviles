@@ -19,6 +19,7 @@ public class TitleActivity extends FragmentActivity implements OnClickListener {
 		setTitle("CabScore");
 		findViewById(R.id.btnSolicitarTaxi).setOnClickListener(this);
 		
+		
 	}
 
 	

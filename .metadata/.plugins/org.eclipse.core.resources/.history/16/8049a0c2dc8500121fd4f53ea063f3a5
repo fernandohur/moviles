@@ -1,8 +1,0 @@
-package com.fer.smsc.messageProtocol.sender;
-
-public abstract class AbstractSender{
-
-	public PasajeroSender(MessageSender sender) {
-		this.sender = sender;
-	}
-}

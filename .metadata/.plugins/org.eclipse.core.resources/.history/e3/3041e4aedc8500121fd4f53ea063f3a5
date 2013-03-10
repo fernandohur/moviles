@@ -1,5 +1,0 @@
-package com.fer.smsc.messageProtocol.sender;
-
-public class AbstractSender {
-
-}

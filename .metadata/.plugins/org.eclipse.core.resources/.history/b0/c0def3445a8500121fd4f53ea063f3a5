@@ -1,7 +1,0 @@
-package com.fer.smsc.model.protocol;
-
-public interface TaxiSender {
-
-	public String confirmarServicio(String idPasajero, int tiempoAprox);
-	
-}
