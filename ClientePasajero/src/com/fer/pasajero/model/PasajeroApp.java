@@ -12,6 +12,8 @@ public class PasajeroApp extends Application {
 	
 	public PasajeroApp() {
 		ubicacionesFrecuentes = new ArrayList<Ubicacion>();
+		ubicacionesFrecuentes.add(
+				new Ubicacion("132", "12-45", "420", "", "Mi casa"));
 	}
 
 	public List<Ubicacion> getUbicacionesFrecuentes() {

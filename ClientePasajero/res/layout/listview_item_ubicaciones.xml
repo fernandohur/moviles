@@ -3,8 +3,7 @@
     android:id="@+id/RelativeLayout1"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical" 
-    android:background="@layout/list_ubicaciones_selector"
+    android:background="@drawable/list_selector"
     >
 
     <LinearLayout
@@ -31,7 +30,7 @@
 
     </LinearLayout>
 
-    <ImageButton
+    <ImageView
         android:id="@+id/btnGoToUbicacion"
         android:layout_width="50dp"
         android:layout_height="50dp"
