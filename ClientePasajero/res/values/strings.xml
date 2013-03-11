@@ -13,5 +13,6 @@
     <string name="title_activity_servicio_confirmado">ServicioConfirmadoActivity</string>
     <string name="title_activity_crear_ubicacion">CrearUbicacionActivity</string>
     <string name="title_activity_ubicaciones">UbicacionesActivity</string>
+    <string name="service_solicitar_taxi">Solicitar Taxi</string>
 
 </resources>

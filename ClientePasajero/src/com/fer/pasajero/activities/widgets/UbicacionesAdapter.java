@@ -41,7 +41,7 @@ public class UbicacionesAdapter extends BaseAdapter {
 		if (view == null) {
 			
 			LayoutInflater inflater = LayoutInflater.from(parent.getContext());
-			view = inflater.inflate(R.layout.list_view_item_ubicaciones, parent, false);
+			view = inflater.inflate(R.layout.listview_item_ubicaciones, parent, false);
 			view.setOnTouchListener(new OnTouchListener() {
 				
 				@Override

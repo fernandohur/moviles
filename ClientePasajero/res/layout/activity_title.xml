@@ -37,5 +37,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Mis ubicaciones" />
+    
+    <Button
+        android:id="@+id/btnAgendarTaxi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Agendar Taxi" />
 
 </LinearLayout>

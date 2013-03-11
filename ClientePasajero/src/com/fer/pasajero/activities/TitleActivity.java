@@ -21,7 +21,7 @@ public class TitleActivity extends FragmentActivity implements OnClickListener {
 		findViewById(R.id.btnSolicitarTaxi).setOnClickListener(this);
 		findViewById(R.id.btnCrearUbicacion).setOnClickListener(this);
 		findViewById(R.id.btnUbicaciones).setOnClickListener(this);
-		
+		findViewById(R.id.btnAgendarTaxi).setOnClickListener(this);
 	}
 
 	
@@ -30,7 +30,7 @@ public class TitleActivity extends FragmentActivity implements OnClickListener {
 		
 		if (v.equals(findViewById(R.id.btnSolicitarTaxi)))
 		{
-			Intent intent = new Intent(this,SolicitarTaxiActivity.class);
+			Intent intent = new Intent(this,SolicitarTaxiServiceActivity.class);
 			startActivity(intent);
 		}
 		else if (v.equals(findViewById(R.id.btnCrearUbicacion)))
@@ -41,6 +41,11 @@ public class TitleActivity extends FragmentActivity implements OnClickListener {
 		else if (v.equals(findViewById(R.id.btnUbicaciones)))
 		{
 			Intent intent = new Intent(this, UbicacionesActivity.class);
+			startActivity(intent);
+		}
+		else if (v.equals(findViewById(R.id.btnAgendarTaxi)))
+		{
+			Intent intent = new Intent(this, AgendarTaxiActivity.class);
 			startActivity(intent);
 		}
 	}
