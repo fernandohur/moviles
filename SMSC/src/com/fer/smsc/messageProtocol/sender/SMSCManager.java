@@ -20,7 +20,7 @@ public class SMSCManager extends AbstractMessenger{
 	{
 		if (instance==null)
 		{
-			instance = new SMSCManager();
+			instance = new SMSCManager("5554");
 		}
 		return instance;
 	}
