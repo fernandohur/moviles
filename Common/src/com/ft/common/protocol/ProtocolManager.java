@@ -99,7 +99,7 @@ public class ProtocolManager {
 	
 	public static boolean isSolicitarServicioTaxista(String message)
 	{
-		return message.matches(SOLICITAR_TAXI_TAXISTA+SEPARADOR+"[0-9]+ [0-9]+");
+		return message.matches(SOLICITAR_TAXI_TAXISTA+SEPARADOR+"[0-9]+"+SEPARADOR+".+");
 	}
 	
 	public static boolean isServicioConfirmado(String message)
