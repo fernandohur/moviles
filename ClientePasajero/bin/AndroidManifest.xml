@@ -5,7 +5,7 @@
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="8"
+        android:minSdkVersion="14"
         android:targetSdkVersion="17" />
 
     <uses-permission android:name="android.permission.INTERNET" />
@@ -18,7 +18,8 @@
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme" >
+        android:theme="@style/AppTheme"
+        android:name="com.fer.pasajero.model.PasajeroApp" >
         <activity
             android:name="com.fer.pasajero.activities.SolicitarTaxiActivity"
             android:label="@string/app_name" >
@@ -36,19 +37,26 @@
             android:name="com.fer.pasajero.activities.EsperarTaxiActivity"
             android:label="@string/title_activity_esperar_taxi" >
         </activity>
-
-       
-
         <activity
             android:name="com.fer.pasajero.activities.ServicioConfirmadoActivity"
             android:label="@string/title_activity_servicio_confirmado" >
         </activity>
-        
-        <receiver android:name="com.fer.pasajero.receivers.SmsBroadCastReceiver">
+
+        <receiver android:name="com.fer.pasajero.receivers.SmsBroadCastReceiver" >
             <intent-filter>
-                <action android:name="android.provider.Telephony.SMS_RECEIVED"></action>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" >
+                </action>
             </intent-filter>
         </receiver>
+
+        <activity
+            android:name="com.fer.pasajero.activities.CrearUbicacionActivity"
+            android:label="@string/title_activity_crear_ubicacion" >
+        </activity>
+        <activity
+            android:name="com.fer.pasajero.activities.UbicacionesActivity"
+            android:label="@string/title_activity_ubicaciones" >
+        </activity>
     </application>
 
 </manifest>

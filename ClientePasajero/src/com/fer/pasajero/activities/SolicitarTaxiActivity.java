@@ -7,8 +7,9 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.TextView;
 
-import com.fer.pasajero.PasajeroManager;
 import com.fer.pasajero.R;
+import com.fer.pasajero.model.PasajeroManager;
+import com.fer.pasajero.model.Ubicacion;
 
 public class SolicitarTaxiActivity extends Activity implements OnClickListener {
 
@@ -33,8 +34,8 @@ public class SolicitarTaxiActivity extends Activity implements OnClickListener {
 		TextView txtCalle =  (TextView) findViewById(R.id.txtCalle);
 		TextView txtCarrera = (TextView) findViewById(R.id.txtCarrera);
 		TextView txtApt = (TextView) findViewById(R.id.txtApt);
-		String ubicacion = "calle:"+txtCalle.getText() + ", cra:"+txtCarrera.getText()+ " ." + txtApt.getText();
-		
+		Ubicacion ubicacion = new Ubicacion(txtCalle.getText().toString(),
+				txtCarrera.getText().toString(), txtApt.getText().toString(), "", "");
 		PasajeroManager pm = PasajeroManager.get();
 		pm.solicitarTaxi(ubicacion);
 	}
